@@ -3,7 +3,7 @@
 <html>
 	<head></head>
 	<body style="font-size:30px">
-		<form action="lohin2.do" method="post">
+		<form action="login4.do" method="post">
 			账号:<input name="adminCode"/><br/>
 			密码:<input type="password" name="pwd"/><br/>
 			<input type="submit" value="登录"/>

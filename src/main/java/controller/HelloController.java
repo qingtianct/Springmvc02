@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import Model.AdminParam;
+
 /**
  * 
  * 
@@ -42,7 +44,7 @@ public class HelloController {
 		
 		return "index";
 	}
-	@RequestMapping("/lohin2.do")
+	@RequestMapping("/login2.do")
 	
 	/*
 	 * 
@@ -56,5 +58,15 @@ public class HelloController {
 		return "index";
 	}
 	
+	@RequestMapping("/login4.do")
+	public String login4(AdminParam ap,HttpServletRequest request) {
+		System.out.println("login4()");
+		
+		String adminCode = ap.getAdminCode();
+		request.setAttribute("adminCode",adminCode);
+		
+		
+		return "index";
+	}
 	
 }
